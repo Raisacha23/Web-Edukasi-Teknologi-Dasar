@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi: Cara Merakit PC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Tambahan khusus halaman materi agar seragam */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .main-article h3 {
+            margin: 30px 0 15px 0;
+            color: #1a1a1a;
+            font-size: 22px;
+            border-bottom: 2px solid #eef6ff;
+            display: inline-block;
+        }
+
+        .article-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .step-list {
+            background-color: #f0f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #007bff;
+            margin: 20px 0;
+        }
+
+        .step-list ol {
+            margin-left: 20px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            background-color: #0b1120;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+        }
+
+        .sidebar-header {
+            padding: 10px 32px;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 20px;
+            border-bottom: 1px solid #1e293b;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            padding: 12px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #94a3b8;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+        }
+        
+        .image-source {
+            font-size: 12px;
+            color: #777;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidebar-header">MENU</div>
+        <a href="index.html">Beranda</a>
+        <a href="rakit-pc.html" class="active">Cara Merakit PC</a>
+        <a href="jaringan.html">Jaringan & Internet</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="software.html">Software</a>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">EDUKASI<span>TEKNOLOGI</span></div>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="openNav()">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="content-container">
+            <a href="index.html" class="back-link">&larr; Kembali ke Katalog Utama</a>
+
+            <article class="main-article">
+                <div class="section-header">
+                    <h2 class="section-title">Panduan Cara Merakit PC</h2>
+                    <p class="section-subtitle">Langkah demi langkah membangun komputer impian Anda sendiri.</p>
+                </div>
+
+                <img src="merakitpc.jpg" alt="Proses Merakit PC" class="article-img">
+                <p class="image-source">Sumber: jabarekspres.com</p>
+
+                <h3>Persiapan Sebelum Merakit</h3>
+                <p>
+                    Merakit PC sendiri memberikan kepuasan tersendiri dan memungkinkan Anda memilih komponen sesuai kebutuhan. Sebelum memulai, pastikan Anda berada di lingkungan yang bebas debu dan menggunakan alas yang tidak menghantarkan listrik statis. Siapkan peralatan dasar seperti obeng kembang (plus) dan pastikan semua komponen telah lengkap.
+                </p>
+
+                <h3>Langkah-Langkah Utama Merakit PC</h3>
+                <p>Ikuti urutan umum berikut untuk memastikan perakitan berjalan lancar:</p>
+                
+                <div class="step-list">
+                    <ol>
+                        <li><strong>Memasang Processor:</strong> Pasang CPU ke socket Motherboard dengan hati-hati. Pastikan tanda segitiga di pojok CPU sejajar dengan tanda di socket.</li>
+                        <li><strong>Memasang RAM:</strong> Masukkan modul memori ke slot RAM hingga terdengar bunyi klik.</li>
+                        <li><strong>Memasang Storage (SSD/M.2):</strong> Pasang penyimpanan pada slot yang tersedia sebelum motherboard masuk ke dalam casing.</li>
+                        <li><strong>Memasang Motherboard ke Casing:</strong> Letakkan motherboard di dalam casing dan kencangkan bautnya sesuai posisi penyangga (standoff).</li>
+                        <li><strong>Memasang Power Supply (PSU):</strong> Tempatkan PSU di kompartemennya dan hubungkan kabel daya utama ke motherboard.</li>
+                        <li><strong>Manajemen Kabel:</strong> Atur kabel-kabel agar rapi dan tidak menghambat aliran udara di dalam casing.</li>
+                    </ol>
+                </div>
+
+                <h3>Pengecekan Akhir dan Booting</h3>
+                <p>
+                    Setelah semua komponen terpasang dan kabel terhubung (termasuk kabel panel depan untuk tombol power), hubungkan monitor ke kartu grafis atau motherboard. Tekan tombol power untuk melakukan POST (Power-On Self-Test). Jika muncul tampilan BIOS di layar, selamat! PC Anda telah berhasil dirakit secara fisik.
+                </p>
+
+                <h3>Mengapa Merakit Sendiri Lebih Baik?</h3>
+                <p>
+                    Selain lebih ekonomis, merakit sendiri memudahkan Anda dalam melakukan upgrade di masa depan. Anda juga lebih memahami fungsi setiap komponen di dalam komputer Anda, sehingga lebih mudah saat melakukan pemecahan masalah (troubleshooting) jika terjadi kendala teknis nantinya.
+                </p>
+            </article>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

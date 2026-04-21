@@ -1,0 +1,309 @@
+/* Dasar & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    /* Gradasi Biru agar lebih Tech-Look */
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(10, 20, 40, 0.8), rgba(10, 20, 40, 0.8)), 
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Bagian Konten Utama */
+main {
+    padding: 60px 10%;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Update: Bagian yang kamu tandai sudah diubah di sini */
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Garis bawah pengganti garis samping (Modern Style) */
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 6px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    border-radius: 10px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Grid Kartu */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,123,255,0.15);
+    border-color: #007bff;
+}
+
+.card-image {
+    background: #f0f7ff;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+/* Sidebar Menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #0b1120;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar-header {
+    padding: 10px 32px;
+    font-weight: bold;
+    color: #007bff;
+    font-size: 20px;
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #94a3b8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover { color: #fff; background-color: #007bff; }
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Sumber Foto */
+.image-source {
+    font-size: 10px;
+    color: #777;
+    background: #f1f1f1;
+    padding: 3px 10px;
+    text-align: right;
+    font-style: italic;
+}
+.quiz-container {
+    margin-top: 50px;
+    padding: 40px;
+    background: #fdfdfd;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.quiz-group h3 {
+    margin: 25px 0;
+    color: #007bff;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+.question-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.question-card p {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.question-card label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.question-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.btn-submit-quiz {
+    background: #007bff;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 30px auto;
+}
+
+.btn-submit-quiz:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+#result-display {
+    padding: 20px;
+    background: #eef6ff;
+    border-radius: 15px;
+    border: 2px dashed #007bff;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
